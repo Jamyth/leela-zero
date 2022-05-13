@@ -70,7 +70,7 @@ if(NOT CMAKE_CONFIGURATION_TYPES AND NOT CMAKE_BUILD_TYPE)
 endif(NOT CMAKE_CONFIGURATION_TYPES AND NOT CMAKE_BUILD_TYPE)
 
 if(GccSpecificFlags)
-  set(GCC_COMPILE_FLAGS "-Wall -Wextra -ffast-math -flto -march=native")
+  set(GCC_COMPILE_FLAGS "-Wall -Wextra -ffast-math -flto -mcpu=apple-m1")
   set(GCC_DISABLED_WARNING_COMPILE_FLAGS "-Wno-ignored-attributes -Wno-maybe-uninitialized \
       -Wno-mismatched-tags")
   set(GCC_FLAGS "${GCC_COMPILE_FLAGS} ${GCC_DISABLED_WARNING_COMPILE_FLAGS}")
